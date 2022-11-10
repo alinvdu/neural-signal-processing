@@ -1,0 +1,40 @@
+load data/sampleEEGdata.mat
+
+% print some details about the data
+disp("Name of the dataset: " + EEG.setname);
+chanLocsName = EEG.chanlocs(1).labels;
+
+for k = 2:numel(EEG.chanlocs)
+    chanLocsName = chanLocsName + ","  + EEG.chanlocs(k).labels;
+end
+
+disp("Number of channels: " + size(EEG.chanlocs, 2));
+disp("Channels locations: " + chanLocsName);
+
+% Time frequency analysis on multiple trials - 1 channel
+
+% pick some frequency parameters
+min_freq = 4;
+max_freq = 30;
+num_freq = 40;
+frex = linspace(min_freq, max_freq, num_freq);
+
+% pick a channel to compute
+channel_to_use = 'AF7';
+
+% wavelets parameters
+range_cycles = [4 10];
+s = logspace(log10(range_cycles(1)), log10(range_cycles(2)), num_freq) ./ (2 * pi * frex);
+wave_time = -2:1/EEG.srate:2;
+half_wave = (length(wave_time) - 1) / 2;
+
+% FFT parameters
+nWave = length(wave_time);
+nData = EEG.pnts * EEG.trials;
+nConv = nWave + nData - 1;
+
+% compute FFT of all trials concatenated
+all_data = reshape(EEG.data(strcmpi(channel_to_use, {EEG.chanlocs.labels}), :, :), 1, []);
+dataX = fft(all_data, nConv);
+
+% convolution over frequencies
