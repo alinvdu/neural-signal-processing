@@ -1,4 +1,4 @@
-load data/sampleEEGdata.mat
+load ../data/sampleEEGdata.mat
 
 % print some details about the data
 disp("Name of the dataset: " + EEG.setname);
