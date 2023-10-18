@@ -2,6 +2,7 @@
 The content of this course is based on Mike X Cohen: Complete neural signal processing and analysis: Zero to hero
 https://www.udemy.com/course/solved-challenges-ants/
 
+* Images taken from the work I've done *
 <img width="800" alt="NeuralSignalCourse" src="https://github.com/bobergsatoko/neural-signal-processing/assets/16021447/81838493-25e9-4565-8fc8-44268a3a72da">
 
 **Time Domain Analysis**
