@@ -2,13 +2,15 @@
 The content of this course is based on Mike X Cohen: Complete neural signal processing and analysis: Zero to hero
 https://www.udemy.com/course/solved-challenges-ants/
 
+<img width="800" alt="NeuralSignalCourse" src="https://github.com/bobergsatoko/neural-signal-processing/assets/16021447/81838493-25e9-4565-8fc8-44268a3a72da">
+
 **Time Domain Analysis**
 1. erp-time-peaks.m -> Perform ERP (Event Related Potential).ERP is the average electrical activity of the brain in response to a specific stimulus or event.
 2. voltage-fluctuations.m -> Voltage Fluctuations. In this project I analysed voltage fluctuations in Event Related Potential and in the end draw a visualization of zones before and after the onset of stimulus.
 
 Visualizations:
-![IMG_0967](https://github.com/bobergsatoko/neural-signal-processing/assets/16021447/61798471-e5d1-4a25-8020-dba10f5cabb5)
-![IMG_0968](https://github.com/bobergsatoko/neural-signal-processing/assets/16021447/584412aa-1268-4727-97f6-a7ae83779c59)
+![Zones-Of-Voltage](https://github.com/bobergsatoko/neural-signal-processing/assets/16021447/24af6dc6-f356-4aeb-8bef-8f3583de991d)
+
 
 **Time Frequency Analysis**
 1. SlowFastFourierTransform.m -> Perform manual fourier transform in a for loop. Plot the amplitude spectrum.
