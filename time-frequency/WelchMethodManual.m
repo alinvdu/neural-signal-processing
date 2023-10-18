@@ -63,11 +63,8 @@ pwelch(eegdata,hannw,round(winsize/4),nfft,srate);
 set(gca,'xlim',[0 40])
 
 
-%% 
-% 
-%   VIDEO: Welch's method on v1 laminar data
-% 
-% 
+%   Welch's method on v1 laminar data
+
 
 clear
 load v1_laminar.mat

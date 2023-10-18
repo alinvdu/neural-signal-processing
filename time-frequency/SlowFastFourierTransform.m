@@ -8,7 +8,7 @@ amplit = [ 5 15 10 5 7];
 time = -1:1/srate:1;
 
 signal = zeros(1, length(time));
-for fi=1:length(frex):
+for fi=1:length(frex)
     signal = signal + amplit(fi) * sin(2*pi*frex(fi)*time);
 end
 
@@ -32,7 +32,7 @@ fourierCoefs = fourierCoefs / N;
 % plot
 figure(1), clf
 subplot(221)
-plot(real(exp(-2*pi*1i*(10).*fourierTime))
+plot(real(exp(-2*pi*1i*(10).*fourierTime)))
 xlabel('time (a.u.)', ylabel('Amplitude'))
 title('One sine wave from the FT (real part)')
 
