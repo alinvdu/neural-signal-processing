@@ -8,21 +8,21 @@ https://www.udemy.com/course/solved-challenges-ants/
 1. erp-time-peaks.m -> Perform ERP (Event Related Potential).ERP is the average electrical activity of the brain in response to a specific stimulus or event.
 2. voltage-fluctuations.m -> Voltage Fluctuations. In this project I analysed voltage fluctuations in Event Related Potential and in the end draw a visualization of zones before and after the onset of stimulus.
 
-Visualizations:
-![Zones-Of-Voltage](https://github.com/bobergsatoko/neural-signal-processing/assets/16021447/24af6dc6-f356-4aeb-8bef-8f3583de991d)
-
-
 **Time Frequency Analysis**
 1. SlowFastFourierTransform.m -> Perform manual fourier transform in a for loop. Plot the amplitude spectrum.
-Visualization:
-![image](https://user-images.githubusercontent.com/16021447/201211814-5e3fe90e-f501-4c3f-b1f1-91764ea9fb40.png)
-2. TimeFrequency_plot.m -> Perform time frequency analysis. Apply convolution to EEG signal in some specifics channels and plot a time frequency in order to analyse brain activations. In this specific examples I used cycles but there are other examples with full width at half maximum.
-3. InverseFTManual.m -> Perform the inverse operation of Fourier Transform manually, in a for loop.
-4. ManualTimeFilter.m -> Perform a manual filter in the frequency domain after applying Welch method, this is a simulation of a line filter at a specific frequency.
-5. WelchMethodManual.m -> Welch method is used to estimate power spectral density, manually implement the welch method and then use Matlab built-in tools.
-6. SpectralSeparation.m -> Try to separate a simulated neural signal in two dipoles.
-7. DetrendedFluctuationAnalysis.m -> Detect fractal-like scaling properties and correlations in non-stationary time series data. This is used in disease detection such as Alzheimer, Parkinson, Epilepsy, Schizophrenia and others.
-8. 
+Visualization.
+
+Visualizations:
+<img width="800" alt="ex2" src="https://github.com/bobergsatoko/neural-signal-processing/assets/16021447/5eedf8e3-ba50-46ed-b197-bdffaa8dc12d">
+
+
+3. TimeFrequency_plot.m -> Perform time frequency analysis. Apply convolution to EEG signal in some specifics channels and plot a time frequency in order to analyse brain activations. In this specific examples I used cycles but there are other examples with full width at half maximum.
+4. InverseFTManual.m -> Perform the inverse operation of Fourier Transform manually, in a for loop.
+5. ManualTimeFilter.m -> Perform a manual filter in the frequency domain after applying Welch method, this is a simulation of a line filter at a specific frequency.
+6. WelchMethodManual.m -> Welch method is used to estimate power spectral density, manually implement the welch method and then use Matlab built-in tools.
+7. SpectralSeparation.m -> Try to separate a simulated neural signal in two dipoles.
+8. DetrendedFluctuationAnalysis.m -> Detect fractal-like scaling properties and correlations in non-stationary time series data. This is used in disease detection such as Alzheimer, Parkinson, Epilepsy, Schizophrenia and others.
+9. 
 
 **Synchronization Analysis**
 1. InterSitePhaseClustering.m -> Measures connections between two electrodes in terms of phase on a specific trial.
